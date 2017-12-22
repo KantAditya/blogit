@@ -1,0 +1,26 @@
+<html ng-app="myApp">
+    <head>
+        <title>BlogIt!</title>
+     <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script-->
+     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+     <!--JS Files-->
+     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="bower_components/stamplay-js-sdk/dist/stamplay.min.js"></script>
+     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+     <script type="text/javascript" src="app.js"></script>     
+        
+    </head>
+    <body ng-controller="myCtrl">
+        <input type="type" ng-model="message">
+        <h1> {{ message }} </h1>
+        <input type="type" ng-model="fname">
+        <h1> Hello {{ fname }} </h1>
+        
+        
+        <input type="type" ng-model="lname">
+        <h1> {{ lname }} </h1>
+        <h1> name:{{fname+lname}} </h1>
+        
+    </body>
+</html>

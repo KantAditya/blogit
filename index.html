@@ -1,0 +1,24 @@
+<html ng-app="myApp">
+    <head>
+        <title>BlogIt!</title>
+        <!--CSS Files-->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+        <!--JS Files-->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/stamplay-js-sdk/dist/stamplay.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+    </head>
+    <body ng-controller="MainCtrl">
+        <div class="container-fluid">
+            <div ng-include="'structure/menu.html'"></div>
+                                    
+        </div>
+        <div ui-view></div>
+     
+    </body>
+</html>
